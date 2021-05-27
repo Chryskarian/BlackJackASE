@@ -1,7 +1,10 @@
-/.classpath 
-/.project
-/.settings/
-/bin/
-/bin1/
-*.class
-/target/
+target/
+!/src/**/target/**
+.project
+.settings/
+.classpath
+*.iml
+*.ipr
+*.iws
+.idea/
+.DS_Store

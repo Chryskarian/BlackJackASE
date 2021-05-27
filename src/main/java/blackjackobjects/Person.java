@@ -17,7 +17,7 @@ public class Person {
 		return hand;
 	}
 
-	public void delHand() {
+	public void deleteHand() {
 		hand.clear();
 	}
 

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.bewotec.bengt</groupId>
+	<artifactId>blackjack</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+	<dependencies>
+		<dependency>
+			<groupId>com.jgoodies</groupId>
+			<artifactId>jgoodies-common</artifactId>
+			<version>1.8.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jgoodies</groupId>
+			<artifactId>jgoodies-forms</artifactId>
+			<version>1.8.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-agroal</artifactId>
+			<version>5.3.7.Final</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.4.193</version>
+		</dependency>
+	</dependencies>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- COMPILE -->
+		<java.version>1.8</java.version>
+		<compiler.verbose>true</compiler.verbose>
+		<compiler.debug>true</compiler.debug>
+	</properties>
+
+	<scm>
+		<developerConnection>scm:git:https://git.webtravel.de/Blackjack/Blackjack.git</developerConnection>
+		<url>https://git.webtravel.de/Blackjack/Blackjack.git</url>
+	</scm>
+
+	<organization>
+		<name>Bewotec Software Entwicklungs- und Vertriebs GmbH</name>
+		<url>http://www.bewotec.de</url>
+	</organization>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<debug>${compiler.debug}</debug>
+					<verbose>${compiler.verbose}</verbose>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

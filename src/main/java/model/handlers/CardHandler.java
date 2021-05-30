@@ -9,7 +9,11 @@ import model.enums.DrawSituation;
 public class CardHandler {
 
 
-    private PlayingCardDeck deck;
+    public PlayingCardDeck deck;
+
+    public PlayingCardDeck getDeck() {
+        return deck;
+    }
 
     public void createNewDeck() {
         deck = new PlayingCardDeck();

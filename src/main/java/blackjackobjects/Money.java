@@ -67,7 +67,7 @@ public class Money implements Serializable {
 		this.amount = amount.setScale(currency.getDefaultFractionDigits(), rounding);
 	}
 
-	private BigDecimal getAmount() {
+	public BigDecimal getAmount() {
 		return amount;
 	}
 

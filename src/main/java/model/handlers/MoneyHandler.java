@@ -1,4 +1,4 @@
-package model;
+package model.handlers;
 
 import blackjackobjects.Money;
 import databasecommunication.HibernateDatabaseActions;
@@ -32,7 +32,7 @@ public class MoneyHandler {
         player.removeFromBalance(Money.toMoney(bet));
     }
 
-    public void moneyBasedOnWinSituation(WinSituation winSituation, Player player){
+    public void addMoneyBasedOnWinSituation(WinSituation winSituation, Player player){
         switch (winSituation) {
             case H1H2:
             case SPIELERGEWINNT:

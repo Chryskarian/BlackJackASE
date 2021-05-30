@@ -1,4 +1,4 @@
-package model;
+package model.handlers;
 
 import blackjackobjects.Card;
 import blackjackobjects.Person;

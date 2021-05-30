@@ -3,7 +3,7 @@ package controller.listeners;
 import blackjackobjects.Person;
 import controller.GameController;
 import databasecommunication.Player;
-import model.EvaluationHandler;
+import model.handlers.EvaluationHandler;
 import model.enums.WinSituation;
 
 import javax.swing.*;
@@ -35,7 +35,7 @@ public class StopActionListener implements ActionListener {
             } else {
                 winSituation = evaluationHandler.evaluateStopNormal(player, croupier);
             }
-            gameController.getMoneyHandler().moneyBasedOnWinSituation(winSituation, player);
+            gameController.getMoneyHandler().addMoneyBasedOnWinSituation(winSituation, player);
             SwingUtilities.invokeLater(() -> {
                 gameController.drawCroupierCards(winSituation.getMessage());
             });

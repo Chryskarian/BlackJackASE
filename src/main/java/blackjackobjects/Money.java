@@ -8,7 +8,7 @@ import java.util.Currency;
 @SuppressWarnings("serial")
 public class Money implements Serializable {
 
-	private static final Currency EUR = Currency.getInstance("EUR");
+	public static final Currency EUR = Currency.getInstance("EUR");
 	private static final RoundingMode DEFAULT_ROUNDING = RoundingMode.HALF_EVEN;
 
 	private final BigDecimal amount;

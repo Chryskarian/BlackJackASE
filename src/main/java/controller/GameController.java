@@ -14,9 +14,9 @@ import java.awt.event.FocusListener;
 import java.util.logging.Logger;
 import javax.swing.JTextField;
 import javax.swing.Timer;
-import model.CardHandler;
-import model.EvaluationHandler;
-import model.MoneyHandler;
+import model.handlers.CardHandler;
+import model.handlers.EvaluationHandler;
+import model.handlers.MoneyHandler;
 import view.GameGUI;
 
 public class GameController {

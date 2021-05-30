@@ -5,7 +5,7 @@ import blackjackobjects.Money;
 import blackjackobjects.Person;
 import controller.GameController;
 import databasecommunication.Player;
-import model.CardHandler;
+import model.handlers.CardHandler;
 import view.GameGUI;
 
 import javax.swing.*;

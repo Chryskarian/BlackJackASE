@@ -70,7 +70,7 @@ public class NewCardActionListener implements ActionListener {
         Player player = gameController.getPlayer();
 
         WinSituation winSituation = gameController.getEvaluationHandler().evaluateStopSplit(player, croupier);
-        gameController.getMoneyHandler().moneyBasedOnWinSituation(winSituation, player);
+        gameController.getMoneyHandler().addMoneyBasedOnWinSituation(winSituation, player);
         SwingUtilities.invokeLater(() -> {
             addSplitPlayerCard();
             gameController.drawCroupierCards(winSituation.getMessage());

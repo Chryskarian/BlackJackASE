@@ -22,9 +22,9 @@ import com.jgoodies.forms.layout.RowSpec;
 
 import blackjackobjects.Money;
 import databasecommunication.Player;
-import model.GUIFactory;
-import model.JLabelFactory;
-import model.PasswordFieldBuilder;
+import view.factorys.PasswordFieldBuilder;
+import view.factorys.GUIFactory;
+import view.factorys.JLabelFactory;
 
 @SuppressWarnings("serial")
 public class GameGUI extends JFrame {

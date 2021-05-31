@@ -3,7 +3,7 @@ package controller;
 import blackjackobjects.Card;
 import blackjackobjects.Money;
 import blackjackobjects.Person;
-import controller.listeners.*;
+import model.listeners.*;
 import databasecommunication.HibernateDatabaseActions;
 import databasecommunication.Player;
 import java.awt.Color;

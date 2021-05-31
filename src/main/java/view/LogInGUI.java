@@ -8,9 +8,9 @@ import java.awt.event.FocusListener;
 import javax.swing.*;
 
 import databasecommunication.Player;
-import model.GUIFactory;
-import model.JLabelFactory;
-import model.PasswordFieldBuilder;
+import view.factorys.PasswordFieldBuilder;
+import view.factorys.GUIFactory;
+import view.factorys.JLabelFactory;
 
 @SuppressWarnings("serial")
 public class LogInGUI extends JFrame {
